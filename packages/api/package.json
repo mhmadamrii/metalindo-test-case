@@ -1,0 +1,26 @@
+{
+  "name": "@test-case/api",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {
+    "@test-case/config": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@trpc/server": "catalog:",
+    "@trpc/client": "catalog:",
+    "next": "15.5.4",
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.11"
+  }
+}
