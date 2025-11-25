@@ -9,18 +9,13 @@
   "orm": "none",
   "backend": "self",
   "runtime": "none",
-  "frontend": [
-    "next"
-  ],
-  "addons": [
-    "husky",
-    "turborepo"
-  ],
+  "frontend": ["next"],
+  "addons": ["husky", "turborepo"],
   "examples": [],
   "auth": "none",
   "packageManager": "pnpm",
   "dbSetup": "none",
   "api": "trpc",
   "webDeploy": "none",
-  "serverDeploy": "none"
+  "serverDeploy": "none",
 }

@@ -1,6 +1,8 @@
 # test-case
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Next.js, Self, TRPC, and more.
+This project was created with
+[Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a
+modern TypeScript stack that combines Next.js, Self, TRPC, and more.
 
 ## Features
 
@@ -20,20 +22,14 @@ First, install the dependencies:
 pnpm install
 ```
 
-
 Then, run the development server:
 
 ```bash
 pnpm run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see your fullstack application.
-
-
-
-
-
-
+Open [http://localhost:3001](http://localhost:3001) in your browser to see your
+fullstack application.
 
 ## Project Structure
 
