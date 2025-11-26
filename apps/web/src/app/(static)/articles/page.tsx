@@ -1,5 +1,7 @@
-import { Suspense } from 'react';
 import styles from './page.module.css';
+import Loader from '@/components/loader';
+
+import { Suspense } from 'react';
 
 interface Post {
   userId: number;
@@ -25,11 +27,11 @@ export default function ArticlePage() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Articles</h1>
-      <div className={styles.grid}>
-        <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
+        <div className={styles.grid}>
           <ArticleWithData />
-        </Suspense>
-      </div>
+        </div>
+      </Suspense>
     </div>
   );
 }

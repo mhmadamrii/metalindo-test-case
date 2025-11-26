@@ -46,7 +46,7 @@ export function UserList() {
   }
 
   return (
-    <div className='mt-8 space-y-4'>
+    <div className='mt-8 space-y-4 w-full'>
       <div className='w-full flex justify-between items-center'>
         <h2 className='text-2xl font-bold'>Registered Users</h2>
         <Button

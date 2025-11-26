@@ -42,9 +42,8 @@ export function FormInput() {
   }
 
   return (
-    <div className='mx-auto max-w-md space-y-8'>
+    <div className='space-y-8 w-full max-w-xl'>
       <div className='space-y-4'>
-        <h2 className='text-2xl font-bold'>Register</h2>
         <form onSubmit={handleSubmit} className='space-y-4'>
           <div className='space-y-2'>
             <label htmlFor='name' className='text-sm font-medium'>

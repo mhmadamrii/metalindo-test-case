@@ -10,7 +10,7 @@ const links = [
     label: 'Soal 2. Routing Dinamis',
   },
   {
-    to: '/',
+    to: '/api-products',
     label: 'Soal 3. API Routes',
   },
   {

@@ -36,7 +36,9 @@ export const images = [
 export default function ImagePage() {
   return (
     <div className='w-full h-min-screen'>
-      <h1 className='text-3xl font-bold text-center mb-8'>Image Page</h1>
+      <h1 className='text-3xl font-bold text-center mb-8'>
+        Image Optimized using next/image
+      </h1>
       <div className='grid grid-cols-2 gap-4 px-4 py-4'>
         {images.map((img) => (
           <div key={img.id} className='relative aspect-[4/3] w-full'>

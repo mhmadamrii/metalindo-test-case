@@ -1,3 +1,4 @@
+import Loader from '@/components/loader';
 import Link from 'next/link';
 
 import { Suspense } from 'react';
@@ -41,11 +42,11 @@ export default async function Home() {
       <h1 className='mb-8 text-4xl font-bold text-gray-900 dark:text-white text-center'>
         Users
       </h1>
-      <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-        <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
+        <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
           <UsersWithData />
-        </Suspense>
-      </div>
+        </div>
+      </Suspense>
     </div>
   );
 }
