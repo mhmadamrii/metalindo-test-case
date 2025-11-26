@@ -1,53 +1,39 @@
-# TEST CASE FRONT END
+# Test Case FrontEnd
 
-# Soal 1: Membuat Halaman Statis Tugas
+![Next.js Build](/Users/amri/dev/web/test-case/packages/public/next_built.png)
 
-## Buat sebuah halaman Next.js yang menampilkan daftar artikel. Gunakan Static Generation untuk mengambil data artikel dari API eksternal
+## Challenges
+
+1. Create a static page that displays a list of articles. Use Static Generation
+   to retrieve data articles from an external API
 
 **(https://jsonplaceholder.typicode.com/posts).**
 
-- Kriteria:
-- Halaman harus di-generate secara statis.
-- Tampilkan judul dan isi dari setiap artikel.
-- Gunakan CSS Modules untuk styling.
+- Answer: folder `apps/web/src/app/(static)/articles/page.tsx`, visit:
+  `http://localhost:3001/articles`, data is static and generated at build time
+  **(SSG)**
 
-# Soal 2: Routing Dinamis Tugas
+2. Create a dynamic page that displays a list of users. Use Server-Side
+   Rendering to retrieve data users from an external API
 
-## Buat sebuah aplikasi Next.js yang memiliki dua halaman:
+**(https://jsonplaceholder.typicode.com/users).**
 
-1. Halaman utama (/) yang menampilkan daftar pengguna (ambil data dari API
-   **https://jsonplaceholder.typicode.com/users**).
+- Answer: folder `apps/web/src/app/(dynamic)/users/page.tsx`, visit:
+  `http://localhost:3001/users/[id]`, data is dynamic and generated at request
+  time (on demand)
 
-2. Halaman detail pengguna `(/users/[id])` yang menampilkan informasi detail
-   dari pengguna berdasarkan ID.
+3. Create an API endpoint that retrieves data products from a local JSON file.
 
-- Kriteria:
-- Implementasikan routing dinamis untuk halaman detail pengguna.
-- Gunakan Server-Side Rendering untuk halaman detail pengguna.
+- Answer: folder `apps/web/src/app/api/products/route.ts`, visit:
+  `http://localhost:3001/api/products`
 
-# Soal 3: API Routes Tugas
+4. Create a form that submits data.
 
-## Buat sebuah API endpoint di Next.js yang mengembalikan daftar produk. Endpoint ini harus mengambil data dari file JSON lokal yang berisi daftar produk.
+- Answer: folder `apps/web/src/app/(form)/form/page.tsx`, visit:
+  `http://localhost:3001/form`, the data is temporarily stored in the local
+  storage
 
-- Kriteria:
-- Buat file JSON berisi daftar produk di folder data.
-- Implementasikan API endpoint di folder pages/api/products.js.
-- Endpoint harus mengembalikan data dalam format JSON.
+5. Create an image optimization page that displays a list of images.
 
-# Soal 4: Formulir dan Pengelolaan State Tugas:
-
-## Buat sebuah halaman yang memiliki formulir pendaftaran dengan input untuk nama, email, dan password. Ketika formulir dikirim, tampilkan data input di bawah formulir.
-
-- Kriteria:
-- Gunakan useState untuk mengelola state dari input formulir.
-- Implementasikan fungsi untuk menangani pengiriman formulir.
-- Tampilkan data input di bawah formulir setelah formulir dikirim.
-
-# Soal 5: Image Optimization Tugas:
-
-## Buat sebuah halaman yang menampilkan galeri gambar. Gunakan komponen next/image untuk mengoptimalkan gambar.
-
-- Kriteria:
-- Buat sebuah array berisi URL gambar.
-- Tampilkan setiap gambar dalam array menggunakan komponen next/image.
-- Atur lebar dan tinggi gambar agar sesuai dalam tata letak grid.
+- Answer: folder `apps/web/src/app/(image)/image/page.tsx`, visit:
+  `http://localhost:3001/image`

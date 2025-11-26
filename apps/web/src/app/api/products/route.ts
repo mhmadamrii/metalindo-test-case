@@ -1,4 +1,4 @@
-import products from '@/constants/products.json';
+import products from '@/constants/data/products.json';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
