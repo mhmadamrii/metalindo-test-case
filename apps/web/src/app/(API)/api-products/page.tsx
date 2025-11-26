@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 
 async function APIWithData() {
-  const res = await fetch('http://localhost:3001/api/products').then((res) =>
-    res.json(),
-  );
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_SITE_URL}/api/products`,
+  ).then((res) => res.json());
 
   return (
     <div className='px-4 py-2'>
