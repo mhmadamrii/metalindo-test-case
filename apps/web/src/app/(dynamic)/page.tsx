@@ -23,7 +23,7 @@ async function UsersWithData() {
       href={`/users/${user.id}`}
       className='group block overflow-hidden rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md dark:bg-[#1e1e1e]'
     >
-      <h2 className='mb-2 text-xl font-semibold text-gray-900 group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400'>
+      <h2 className='mb-2 text-xl font-semibold text-gray-900 group-hover:underline dark:text-white'>
         {user.name}
       </h2>
       <p className='mb-1 text-sm text-gray-600 dark:text-gray-300'>

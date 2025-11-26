@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
 import products from '@/constants/products.json';
+import { NextResponse } from 'next/server';
 
 export async function GET() {
   return NextResponse.json({
