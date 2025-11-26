@@ -1,6 +1,6 @@
 # Test Case FrontEnd
 
-![Next.js Build](/Users/amri/dev/web/test-case/packages/public/next_built.png)
+![Next.js Build](/packages/public/next_built.png)
 
 ## Challenges
 
