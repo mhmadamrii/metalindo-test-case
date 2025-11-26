@@ -14,11 +14,11 @@ const links = [
     label: 'Soal 3. API Routes',
   },
   {
-    to: '/',
+    to: '/form',
     label: 'Soal 4. Formulir dan Pengelolaan State',
   },
   {
-    to: '/',
+    to: '/images',
     label: 'Soal 5. Image Optimization',
   },
 ] as const;
@@ -35,9 +35,6 @@ export default function Header() {
           );
         })}
       </nav>
-      <div className='flex items-center gap-2'>
-        <ModeToggle />
-      </div>
     </div>
   );
 }

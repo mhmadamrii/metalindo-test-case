@@ -18,35 +18,36 @@ export const images = [
   },
   {
     id: 4,
-    src: 'https://picsum.photos/id/237/800/600',
-    alt: 'Random image from Picsum',
+    src: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e',
+    alt: 'Nature landscape',
   },
   {
     id: 5,
-    src: 'https://picsum.photos/id/1025/800/600',
-    alt: 'Dog from Picsum',
+    src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05',
+    alt: 'Foggy mountains',
   },
   {
     id: 6,
-    src: 'https://via.placeholder.com/800x600.png?text=Placeholder',
-    alt: 'Placeholder image',
+    src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
+    alt: 'Tech workspace',
   },
 ] as const;
 
 export default function ImagePage() {
   return (
     <div className='w-full h-min-screen'>
-      <h1>Image Page</h1>
-      <div className='grid grid-cols-2 gap-4'>
+      <h1 className='text-3xl font-bold text-center mb-8'>Image Page</h1>
+      <div className='grid grid-cols-2 gap-4 px-4 py-4'>
         {images.map((img) => (
-          <Image
-            key={img.id}
-            src={img.src}
-            alt={img.alt}
-            width={800}
-            height={600}
-            className='rounded-lg object-cover'
-          />
+          <div key={img.id} className='relative aspect-[4/3] w-full'>
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              className='rounded-sm object-cover'
+              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+            />
+          </div>
         ))}
       </div>
     </div>
